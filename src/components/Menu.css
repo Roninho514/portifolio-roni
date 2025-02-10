@@ -1,0 +1,38 @@
+
+.menu{
+    margin-right: 2rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.menu ul li {
+    transition: border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Inter', serif;
+    font-size: 15px;
+}
+
+.menu ul li:hover{
+    color: #218FEA ;
+}
+
+.menu ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #218FEA;
+    transition: width 0.3s ease; 
+}
+
+.menu ul li:hover::after {
+    width: 100%; 
+}

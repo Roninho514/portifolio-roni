@@ -1,0 +1,93 @@
+.banner-container{
+    height: 30rem;
+    width: 100%;
+    background-color: #218FEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.text-banner {
+    font-family: 'inter', serif;
+    color: #ffffff;
+    width: 48rem;
+}
+
+.text-banner h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.text-banner span {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.image-perfil-banner{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-perfil-banner img{
+    position: absolute;
+    bottom: -118px;
+    width: 100%;
+}
+
+.main-title{
+    white-space: nowrap;
+}
+
+
+.blinking-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 37px;
+    background-color: rgb(255, 255, 255);
+    animation: blink 0.8s infinite;
+    position: relative;
+    top: 5px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media  (max-width: 800px) {
+    .banner-container{
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .image-perfil-banner {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-banner {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .text-banner span {
+        font-size: 16px;
+    }
+
+    .text-banner h1 {
+        font-size: 22px;
+    }
+
+    .main-title {
+        white-space: normal;
+    }
+}

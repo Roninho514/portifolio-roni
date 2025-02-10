@@ -1,0 +1,93 @@
+.ContactContainer{
+    height: 20rem;
+    width: 100%;
+    background-color: #218FEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10rem;
+}
+
+
+.ContactBox{
+    margin-top: 4rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.IconContact {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fefefe;
+    font-size: 17px;
+    font-family: 'inter' ,serif;
+}
+
+.ContactBox  li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.Icon{
+    font-size: 25px;
+}
+
+.IconSocial {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    color: #fefefe;
+    gap: 1rem;
+}
+
+.IconSocial li{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.IconSocial a {
+    color: #000000;
+    background-color: #fefefe;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+
+.IconSocial a:hover {
+    background-color: #218FEA;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+}
+
+@media  (max-width: 800px) {
+    .ContactBox {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .IconSocial li {
+        width: 43px;
+        height: 48px;
+    }
+
+    .IconSocial {
+        width: 100%;
+    }
+}

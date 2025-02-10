@@ -1,0 +1,106 @@
+.ExperienceContainer {
+    width: 100%;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ExperienceContainer h2 {
+    margin: 4rem 0 4rem 0;
+}
+
+.ListExperienceBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+.BoxItemExperience{
+    width: 32rem;
+    height: 15rem;
+    background-color: #ffffff;
+    border-radius: 21px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #cecece;
+    box-shadow: 16px 9px 7px -8px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+}
+
+.BoxItemHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 91%;
+    margin-top: 1rem;    
+}
+
+.BoxItemHeader h3{
+    font-size: 15px;
+    font-family: 'Inter', serif;
+}
+
+.ImgJob{
+    width: 85px;
+    height: 70px;
+}
+
+.ImgJob img{
+    max-width: 169px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+}
+
+.NameJob{
+    font-family: 'Inter', serif;
+    color: #958888;
+}
+
+.TextJob {
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    margin-top: 1.3rem;
+    font-family: 'inter', serif;
+}
+
+.BoxItemBody{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.BoxItemBody p {
+    width: 76%;
+    text-align: left;
+    font-family: 'inter', serif;
+}
+
+@media  (max-width: 800px) {
+    .BoxItemExperience {
+        width: 17rem;
+        height: 24rem;
+    }
+
+    .BoxItemHeader {
+        align-items: center;
+        gap: 0.7rem;
+        flex-direction: column;
+    }
+
+    .TextJob {
+        width: 100%;
+    }
+
+    .BoxItemBody p {
+        font-size: 15px;
+        width: 100%;
+    }
+}

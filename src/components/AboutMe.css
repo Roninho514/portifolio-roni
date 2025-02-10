@@ -1,0 +1,113 @@
+:root{
+    --main-background : #218FEA;
+}
+
+.aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.Title{
+    font-family: 'Roboto', serif;
+    margin: 4rem  0  4rem 0;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--main-background);
+}
+
+.aboutMeBox {
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+    width: 100%;
+}
+
+.profissionalResumeBox{
+    max-width: 616px;
+}
+
+h2{
+    margin: 0 0 0.8rem 0;
+    font-size: 30px;
+    font-family: 'Roboto', serif;
+    color: var(--main-background);
+}
+
+.profissionalResumeBox p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Inter', serif;
+}
+
+.personalInformationBox {
+    height: 227px;
+}
+
+.personalInformationBox ul {
+    margin-top: 1.5rem;
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.personalInformationBox li {
+    height: 50px;
+    width: 342px;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.personalInformationBox span {
+    color: var(--main-background);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Inter' , serif;
+    margin-right: 0.5rem;
+}
+
+@media  (max-width: 800px) {
+    .profissionalResumeBox p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 1.6;
+        font-family: 'Inter', serif;
+        width: 77%;
+    }
+
+    .profissionalResumeBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutMeBox {
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .personalInformationBox li {
+        height: 43px;
+        width: 304px;
+    }
+
+    .personalInformationBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

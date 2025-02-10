@@ -104,3 +104,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 365px) {
+    .list {
+        width: 81%;
+    }
+}

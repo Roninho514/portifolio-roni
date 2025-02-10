@@ -1,7 +1,7 @@
 {
   "name": "portifolio",
   "homepage": "https://Roninho514.github.io/portifolio-roni",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
